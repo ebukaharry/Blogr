@@ -1,0 +1,237 @@
+:root {
+    /* Primary Colors */
+    --lightRed: hsl(356, 100%, 66%); /* CTA Text */
+    --lighterRed: hsl(355, 100%, 74%); /* CTA hover background */
+    --darkBlue: hsl(208, 49%, 24%); /* headings */
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%); /* text */
+    --grayishBlue: hsl(240, 2%, 79%); /* footer text */
+    --darkGrayishBlue: hsl(207, 13%, 34%); /* body copy */
+    --darkBlackBlue: hsl(240, 10%, 16%); /* footer background */
+
+    /* Gradient */
+    /* Background gradient - Intro/CTA mobile nav: */
+    --lightestRed: hsl(13, 100%, 72%);
+    --red: hsl(353, 100%, 62%);
+
+    /* Background gradient - body: */
+    --darkerGrayishBlue: hsl(237, 17%, 21%);
+    --desaturatedBlue: hsl(237, 23%, 32%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Overpass', sans-serif;
+}
+
+#top-nav {
+    position: relative;
+    overflow: hidden;
+    /* margin-top: 30px; */
+}
+
+#top-nav .nav-links {
+    display: none;
+}
+
+#top-nav a {
+    text-decoration: none;
+    display: block;
+    padding: 60px 25px 0 25px;
+}
+
+nav a.icon, nav a.close {
+    position: absolute;
+    right: 0;
+    top: 9px;
+    font-size: 1.5em;
+}
+
+.nav-card {
+    width: 300px;
+    height: 100%;
+    background-color: brown;
+    margin: 0 auto;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.nav-items {
+    display: flex;
+    align-content: center;
+    padding-left: 6em;
+}
+
+.nav-items a {
+    text-align: center;
+}
+
+.arrow {
+    width: 8px;
+    height: 6px;
+    position: relative;
+    top: 24%;
+}
+
+.icon {
+    display: block;
+}
+
+.close {
+    display: none;
+}
+
+nav a:hover {
+    background-color: var(--lighterRed);
+}
+
+.container {
+    background:linear-gradient(to bottom, var(--lightestRed), var(--red));
+    border-bottom-left-radius: 25%;
+    overflow: hidden;
+}
+
+
+/*dropdown styles*/
+.connect-btn {
+    border: none;
+    cursor: pointer;
+}
+
+.connect {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-items {
+    display: none;
+    position: absolute;
+    background-color: var(--grayishBlue);
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-items a {
+    color: var(--darkGrayishBlue);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-items a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.login {
+    border: none;
+    background-color: inherit;
+    font-size: 16px;
+}
+
+.signup {
+    border-radius: 100px;
+    width: 10em;
+    margin-left: 6.5em;
+    background-image: linear-gradient( to left, var(--red), var(--lightestRed));
+    border: none;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+/* Hero Section */
+
+
+.svg-bg {
+    background: url(/images/bg-pattern-intro.svg) no-repeat;
+    background-position: 35.5% 32%;
+    background-size: 91em;
+    overflow: hidden;
+}
+
+.container .hero-heading {
+    padding: 7em 20px 0 20px;
+}
+
+.container .hero-heading h2 {
+    font-family: 'Overpass', sans-serif;
+    color: var(--white);
+    font-size: 40px;
+    text-align: center;
+}
+
+.hero-p {
+    color: var(--white);
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+.hero-p p:first-child {
+    padding: 20px 2em 5px 2em;
+}
+.hero-p p:last-child {
+    text-align: center;
+}
+
+.hero-cta {
+    padding: 3.5em 0 11em 1em;
+    margin: 0 auto;
+    position: relative;
+    left: 4%;
+}
+
+.hero-cta .start-btn, .hero-cta .learn-btn {
+    border-radius: 50px;
+    padding: 15px;
+    width: 9em;
+    font-size: 18px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.start-btn {
+    color: var(--lightRed);
+    background: var(--white);
+    border: none;
+}
+.learn-btn {
+    color: var(--white);
+    background-color: transparent;
+    border: 1px solid var(--white);
+}
+
+.future {
+    padding: 7em 64px 65px 64px;
+    position: relative;
+}
+
+.future h1 {
+    font-family: 'Overpass', sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+    color: var(--darkBlue);
+}
+
+.desktop {
+    width: 22em;
+    height: 20em;
+    margin-top: 52px;
+    margin-left: -28px;
+}
