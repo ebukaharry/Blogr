@@ -183,7 +183,7 @@ nav a:hover {
 }
 
 .hero-p p:first-child {
-    padding: 20px 2em 5px 2em;
+    padding: 20px 0em 5px 2em;
 }
 .hero-p p:last-child {
     text-align: center;
