@@ -29,6 +29,7 @@
 body {
     font-family: 'Ubuntu', sans-serif;
     font-family: 'Overpass', sans-serif;
+    height: ;
 }
 
 #top-nav {
@@ -171,7 +172,7 @@ nav a:hover {
 .container .hero-heading h2 {
     font-family: 'Overpass', sans-serif;
     color: var(--white);
-    font-size: 40px;
+    font-size: 38px;
     text-align: center;
 }
 
@@ -218,20 +219,34 @@ nav a:hover {
 }
 
 .future {
-    padding: 7em 64px 65px 64px;
+    padding: 7em 0 65px 0;
     position: relative;
 }
 
 .future h1 {
     font-family: 'Overpass', sans-serif;
-    font-size: 25px;
+    font-size: 27px;
     font-weight: 600;
+    text-align: center;
     color: var(--darkBlue);
 }
 
 .desktop {
-    width: 22em;
-    height: 20em;
+    width: 24em;
+    height: 22em;
     margin-top: 52px;
-    margin-left: -28px;
+    margin-bottom: 52px;
+}
+
+.future-contents {
+    padding-bottom: 1.8em;
+}
+
+.future p {
+    margin: 20px;
+    text-align: center;
+    padding: 0 20px;
+    line-height: 1.7em;
+    font-weight: 300;
+    color: var(--darkGrayishBlue);
 }
