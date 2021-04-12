@@ -29,7 +29,7 @@
 body {
     font-family: 'Ubuntu', sans-serif;
     font-family: 'Overpass', sans-serif;
-    height: ;
+    height: ;                     
 }
 
 #top-nav {
@@ -178,7 +178,7 @@ nav a:hover {
 
 .hero-p {
     color: var(--white);
-    font-size: 19px;
+    font-size: 20px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
 }
@@ -249,4 +249,35 @@ nav a:hover {
     line-height: 1.7em;
     font-weight: 300;
     color: var(--darkGrayishBlue);
+}
+
+.infrastructure-wrap {
+    padding-top: 10em;
+}
+
+.infrastructure .infrastructure-container {
+    height: 45em;
+    width: 100vw;
+    background: var(--darkerGrayishBlue);
+    border-top-right-radius: 7em;
+    border-bottom-left-radius: 6em;
+    padding-top: 30px;
+    overflow: hidden;
+}
+
+.infrastructure .circles {
+    width: 23.6em;
+    margin-top: 52px;
+    margin-bottom: 54px;
+    font-size: 27px;
+    right: 126px;
+    position: relative;
+    bottom: 325px;
+}
+
+.phones {
+    width: 25.5em;
+    position: relative;
+    bottom: 58em;
+    right: 10px;
 }
