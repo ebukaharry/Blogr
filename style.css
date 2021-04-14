@@ -254,11 +254,12 @@ nav a:hover {
 .infrastructure-wrap {
     padding-top: 12em;
     overflow: hidden;
+    position: relative;
 }
 
 .infrastructure-wrap .state-of {
-    position: relative;
-    bottom: 52em;
+    position: absolute;
+    bottom: 7em;
 }
 
 .infrastructure-wrap .state-of h1 {
@@ -296,15 +297,15 @@ nav a:hover {
 
 .phones {
     width: 25.5em;
-    position: relative;
-    bottom: 52.5em;
-    right: 12px;
+    position: absolute;
+    bottom: 26.5em;
+    right: -20px;
 }
 
 
 .free-open {
     position: relative;
-    bottom: 40em;
+    top: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -325,6 +326,7 @@ footer {
     align-items: center;
     padding: 80px 0;
     height: auto;
+    margin-top: 6em;
 }
 
 footer #logo {
@@ -351,4 +353,13 @@ footer #logo {
 
 .footer-nav .nav li:first-child a {
     color: var(--white);
+}
+
+.attribution {
+     font-size: 11px; text-align: center; 
+     margin: 3em;
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%);
 }
