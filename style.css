@@ -221,21 +221,21 @@ nav a:hover {
 .future {
     padding: 7em 0 65px 0;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .future h1, .free-open h1 {
     font-family: 'Overpass', sans-serif;
-    font-size: 27px;
+    font-size: 25px;
     font-weight: 600;
     text-align: center;
     color: var(--darkBlue);
 }
 
 .desktop {
-    width: 24em;
-    height: 22em;
-    margin-top: 52px;
-    margin-bottom: 52px;
+   margin: 50px 20px 40px 20px;
 }
 
 .future-contents {
@@ -274,9 +274,8 @@ nav a:hover {
     padding: 0px 23px;
 }
 
-.infrastructure .infrastructure-container {
+.infrastructure .infrastructure-container, footer {
     height: 40em;
-    width: 100vw;
     background: linear-gradient(to bottom, var(--darkerGrayishBlue), var(--desaturatedBlue));
     border-top-right-radius: 7em;
     border-bottom-left-radius: 6em;
@@ -305,9 +304,23 @@ nav a:hover {
 
 .free-open {
     position: relative;
-    bottom: 43em;
+    bottom: 40em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
 }
 
 .tooling {
     padding-top: 20px;
+}
+
+footer {
+    background: var(--darkBlackBlue);
+    color: var(--grayishBlue);
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 6em;
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
 }
