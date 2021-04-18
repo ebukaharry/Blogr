@@ -32,6 +32,10 @@ body {
     height: ;                     
 }
 
+.logo {
+    animation: moveInUp 3s ease-out;
+}
+
 #top-nav {
     position: relative;
     overflow: hidden;
@@ -301,7 +305,7 @@ nav a:hover {
 .phones {
     width: 25.5em;
     position: absolute;
-    bottom: 26.5em;
+    bottom: 26em;
     right: -20px;
 }
 
@@ -394,6 +398,22 @@ footer #logo {
 
     80% {
         transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0)
+    }
+}
+
+@keyframes moveInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    80% {
+        transform: translateY(-10px);
     }
 
     100% {
