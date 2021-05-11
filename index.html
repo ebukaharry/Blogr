@@ -12,19 +12,23 @@
   <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | [Blogr]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
+
 <body>
   <div class="container">
     <div class="svg-bg">
-      <nav id="top-nav">
+      <nav class="top-nav">
         <h1>
           <a href="#" class="logo"><img src="./images/logo.svg" alt=""></a>
+          <div class="cta cta-lg">
+            <a href="#login" class="login-btn">
+              <button class="login login-lg">Login</button>
+            </a>
+            <a href="#signup" class="signup-btn">
+            <button class="signup signup-lg">Sign Up</button>
+            </a>
+          </div>
         </h1>
 
         <!-- Nav Links -->
@@ -33,19 +37,28 @@
             <div class="nav-items product">
               <a href="#product">Product</a>
               <span>
-                <img class="arrow" src="./images/icon-arrow-dark.svg" alt="">
+                <img class="arrow arrow-dark" src="./images/icon-arrow-dark.svg" alt="">
+              </span>
+              <span>
+                <img class="arrow arrow-light" src="./images/icon-arrow-light.svg" alt="">
               </span>
               </div>
               <div class="nav-items company">
                 <a href="#company">Company</a>
                 <span>
-                  <img class="arrow" src="./images/icon-arrow-dark.svg" alt="">
+                  <img class="arrow arrow-dark" src="./images/icon-arrow-dark.svg" alt="">
+                </span>
+                <span>
+                  <img class="arrow arrow-light" src="./images/icon-arrow-light.svg" alt="">
                 </span>
               </div>
               <div class="nav-items connect">
               <a href="#connect" class="connect-btn">Connect</a>
               <span>
-                <img class="arrow" src="/images/icon-arrow-dark.svg" alt="">
+                <img class="arrow arrow-dark" src="/images/icon-arrow-dark.svg" alt="">
+              </span>
+              <span>
+                <img class="arrow arrow-light" src="./images/icon-arrow-light.svg" alt="">
               </span>
               <div class="dropdown-items">
                 <a href="#contact">Contact</a>
@@ -63,7 +76,6 @@
                 <a href="#signup">Sign Up</a>
               </button>
               </div>
-              
             </div>
           </div>
 
@@ -71,21 +83,29 @@
         <a href="#" class="close" style="display: none;">
           <img src="./images/icon-close.svg" class="close-icon" alt="close">
         </a>
-        <a href="#" class="icon" style="display: block;">
+        <a href="#" class="icon">
           <img src="./images/icon-hamburger.svg" class="hamburger" alt="menu">
         </a>
       </nav>
 
-  
-      <!-- <img src="/images/bg-pattern-intro.svg" class="intro-svg" alt=""> -->
+      
     <div class="hero-heading">
       <h2>A modern</h2>
       <h2>publishing platform</h2>
+    </div>
+
+    <div class="hero-heading-lg hero-heading">
+      <h2>A modern publishing platform</h2>
     </div>
     <div class="hero-p">
       <p>Grow your audience and build your</p>
       <p>online brand</p>
     </div>
+
+    <div class="hero-p-lg hero-p">
+      <p>Grow your audience and build your online brand</p>
+    </div>
+
     <div class="hero-cta">
       <button class="start-btn">Start for Free</button>
       <button class="learn-btn">Learn More</button>
@@ -99,9 +119,18 @@
     </div>
       <img src="./images/illustration-editor-mobile.svg" class="desktop" alt="">
 
-      <div class="future-contents">
-        <h1>Introducing an</h1>
-      <h1>extensible editor</h1> 
+      <div class="wrapper">
+        <div>
+          <div class="future-contents">
+            <div class="future-contents-h1">
+              <h1>Introducing an</h1>
+              <h1>extensible editor</h1>
+            </div>
+         
+            <div class="future-contents-h1 future-contents-h1-lg hide-sm">
+              <h1>Introducing an extensible editor</h1>
+            </div>
+         
 
       <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
         The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
@@ -110,50 +139,75 @@
       </div>
       
       <div class="future-contents">
-        <h1>Robust content</h1>
-      <h1>management</h1> 
+        <div class="future-contents-h1">
+          <h1>Robust content</h1>
+          <h1>management</h1> 
+        </div>
+        
+        <div class="future-contents-h1 future-contents-h1-lg hide-sm">
+          <h1>Robust content management</h1>
+        </div>
+        
 
       <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog 
         by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
       </div>
+    </div>
+        
+  <div class="desktop-img">
+    <img src="./images/illustration-editor-desktop.svg" class="desktop desktop-lg" alt="">
+  </div>
+      </div>
   </section>
 
-  <div class="infrastructure-wrap"> 
+
+
     <section class="infrastructure">
         <div class="infrastructure-container">
-          <div class="circles-container">
             <img src="./images/bg-pattern-circles.svg" class="circles" alt="">
+        </div>
+
+        <div class="phones-wrap">
+          <div class="phones-container">
+            <img src="./images/illustration-phones.svg" class="phones" alt="">
+          </div>
+          <div class="state-of">
+            <h1>State of the Art Infrastructure</h1>
+            <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
           </div>
         </div>
-      </section>
-      <img src="./images/illustration-phones.svg" class="phones" alt="">
-      <div class="state-of">
-        <h1>State of the Art Infrastructure</h1>
-        <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-          This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
-      </div>
-  </div>
+    </section>
   
   <div class="free-open">
     <img src="./images/illustration-laptop-mobile.svg" class="laptop desktop" alt="">
-    <h1>Free, open, simple</h1>
-    <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-      features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-      and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
 
-      <div class="tooling">
-         <h1>Powerful tooling</h1>
-      <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-        capable of producing even the most complicated sites.</p>
+    <div class="wrapper">
+      <img src="./images/illustration-laptop-desktop.svg" class="desktop desktop-lg laptop-lg" alt="">
+
+      <div class="wrap">
+        <div class="future-contents-h1 future-contents-h1-lg">
+        <h1>Free, open, simple</h1>
       </div>
-     
+      
+      <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+        features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+        and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+  
+        <div class="tooling">
+          <div class="future-contents-h1 future-contents-h1-lg">
+            <h1>Powerful tooling</h1>
+          </div>
+  
+          <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+          capable of producing even the most complicated sites.</p>
+        </div>
+    </div>
   </div>
+</div>
 
   <footer>
     <div id="logo">
-      <h1>
         <a href="#" class="logo"><img src="/images/logo.svg" alt=""></a>
-      </h1>
     </div>
 
     <nav class="footer-nav">
