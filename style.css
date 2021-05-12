@@ -75,6 +75,11 @@ nav a.icon, nav a.close {
     color: var;
 }
 
+.nav-items a:hover {
+    text-decoration: underline;
+    background: none;
+}
+
 .arrow {
     width: 8px;
     height: 6px;
@@ -96,10 +101,6 @@ nav a.icon, nav a.close {
 
 .close {
     display: none;
-}
-
-nav a:hover {
-    background-color: var(--lighterRed);
 }
 
 .container {
@@ -150,12 +151,22 @@ nav a:hover {
     font-size: 16px;
 }
 
+.login-btn:hover, .footer-nav .nav li a:hover, button.signup-btn {
+    border: none;
+    background: none;
+}
+
 .signup {
     border-radius: 100px;
     width: 10em;
     margin-left: 6.5em;
     background-image: linear-gradient( to left, var(--red), var(--lightestRed));
     border: none;
+}
+
+a.signup:hover, .start-btn:hover {
+    background: var(--lighterRed);
+    color: var(--white);
 }
 
 .cta {
@@ -166,6 +177,10 @@ nav a:hover {
 
 .cta-lg {
     display: none;
+}
+
+a:hover, button:hover {
+    cursor: pointer;
 }
 
 
@@ -233,11 +248,12 @@ nav a:hover {
     margin-right: 15px;
 }
 
-.start-btn {
+.start-btn, .learn-btn:hover{
     color: var(--lightRed);
     background: var(--white);
     border: none;
 }
+
 .learn-btn {
     color: var(--white);
     background-color: transparent;
@@ -382,6 +398,10 @@ footer #logo {
 .footer-nav .nav li a {
     text-decoration: none;
     color: var(--grayishBlue);
+}
+
+.footer-nav .nav li a:hover {
+    text-decoration: underline;
 }
 
 .footer-nav .nav li {
@@ -537,6 +557,14 @@ footer #logo {
         padding: 60px 0 0 0;
     }
 
+    .top-nav a.signup-lg {
+        height: 35px;
+        padding-top: 10px;
+        margin-top: 45px;
+        display: flex;
+        justify-content: center;
+    }
+
     .nav-items {
         padding-left: 0em;
     }
@@ -598,7 +626,6 @@ footer #logo {
         width: 8em;
         margin: 0;
         background: white;
-        height: 3em;
         color: var(--lightRed);
         font-weight: 600;
     }
